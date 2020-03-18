@@ -18,6 +18,41 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\AssetManager.cpp" />
+    <ClCompile Include="Source\BlockRegistry.cpp" />
+    <ClCompile Include="Source\CollisionUtils.cpp" />
+    <ClCompile Include="Source\GameManager.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\InputManager.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\MathUtils.cpp" />
+    <ClCompile Include="Source\MiscUtils.cpp" />
+    <ClCompile Include="Source\Player.cpp" />
+    <ClCompile Include="Source\Simulator.cpp" />
+    <ClCompile Include="Source\Spaceship.cpp" />
+    <ClCompile Include="Source\TimeManager.cpp" />
+    <ClCompile Include="Source\WindowManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\AssetManager.h" />
+    <ClInclude Include="Source\BlockRegistry.h" />
+    <ClInclude Include="Source\CollisionUtils.h" />
+    <ClInclude Include="Source\GameManager.h" />
+    <ClInclude Include="Source\GameObject.h" />
+    <ClInclude Include="Source\includes.h" />
+    <ClInclude Include="Source\InputManager.h" />
+    <ClInclude Include="Source\MathUtils.h" />
+    <ClInclude Include="Source\MiscUtils.h" />
+    <ClInclude Include="Source\Player.h" />
+    <ClInclude Include="Source\Simulator.h" />
+    <ClInclude Include="Source\Spaceship.h" />
+    <ClInclude Include="Source\TimeManager.h" />
+    <ClInclude Include="Source\WindowManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Prefabs\basic.spaceship" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{C15F5F57-458B-42A6-AF41-195A9819A3D3}</ProjectGuid>
@@ -97,6 +132,8 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Libraries\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>
+      </LanguageStandard>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -119,28 +156,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="GameManager.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="includes.h" />
-    <ClInclude Include="InputManager.h" />
-    <ClInclude Include="MathUtils.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="Simulator.h" />
-    <ClInclude Include="TimeManager.h" />
-    <ClInclude Include="WindowManager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="GameManager.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="InputManager.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MathUtils.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Simulator.cpp" />
-    <ClCompile Include="TimeManager.cpp" />
-    <ClCompile Include="WindowManager.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
